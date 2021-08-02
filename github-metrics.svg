@@ -1362,7 +1362,7 @@
                     <rect mask="url(#languages-bar)" x="344.2648878092607" y="0" width="34.34219688589792" height="8" fill="#4F5D95"/>
                     <rect mask="url(#languages-bar)" x="378.6070846951587" y="0" width="33.76011609610234" height="8" fill="#701516"/>
                     <rect mask="url(#languages-bar)" x="412.367200791261" y="0" width="26.528896084816953" height="8" fill="#ededed"/>
-                    <rect mask="url(#languages-bar)" x="438.89609687607793" y="0" width="11.837491791241472" height="8" fill="#ededed"/>
+                    <rect mask="url(#languages-bar)" x="438.89609687607793" y="0" width="11.837491791241472" height="8" fill="#336790"/>
                     <rect mask="url(#languages-bar)" x="450.7335886673194" y="0" width="9.266411332680642" height="8" fill="#2b7489"/>
                 </svg>
                 <div class="row fill-width">
@@ -1399,7 +1399,7 @@
                         </div>
                         <div class="field language details">
                             <div class="field">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill="#ededed" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill="#336790" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/></svg>
                       PLpgSQL
                     </div>
                             <small>
@@ -3590,7 +3590,7 @@
             </section>
             <footer>
                 <span>These metrics do not include all private contributions</span>
-                <span>Last updated 01/08/2021, 18:52 (timezone America/Denver) with lowlighter/metrics@3.11.0</span>
+                <span>Last updated 02/08/2021, 06:28 (timezone America/Denver) with lowlighter/metrics@3.11.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
