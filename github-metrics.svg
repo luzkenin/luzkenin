@@ -200,13 +200,12 @@
   }
   .contribution .gauge text {
     fill: currentColor;
-    font-size: 12px;
-    font-size: 15px;
-    letter-spacing: -2px;
+    font-size: 13px;
   }
   .contribution .gauge {
-    margin: 0 4px;
+    margin: 0 6px;
     color: inherit;
+    transform: scale(1.4) translateY(1px);
   }
   .contribution .icon {
     fill: currentColor;
@@ -278,6 +277,12 @@
     width: 100%;
     justify-content: flex-end;
     font-size: 12px;
+  }
+  .footnote.warning {
+    color: #D79533;
+  }
+  .footnote.warning svg {
+    fill: #D79533;
   }
 
 /* Follow-up */
@@ -836,6 +841,17 @@
     max-width: 900px;
   }
 
+/* Calendar */
+  svg.calendar {
+    margin-left: 13px;
+    margin-top: 4px;
+  }
+
+  svg.calendar text {
+    font-size: 18px;
+    fill: currentColor;
+  }
+
 /* People */
   .people {
     padding: 0 10px;
@@ -1064,18 +1080,18 @@
     border-radius: 5px;
     background-color: #7777771F;
   }
-  .sponsors .goal-text {
+  .sponsors .goal-text, .sponsors .past-text {
     display: flex;
     justify-content: space-between;
     font-style: italic;
-    font-size: 10px;
+    font-size: 12px;
     margin-bottom: 4px;
+  }
+  .sponsors .past-text {
+    margin: 8px 0 2px;
   }
   .sponsors .avatar {
     margin: 2px;
-  }
-  .sponsors .avatar.past {
-    opacity: 0.3;
   }
 
 /* Stackoverflow */
@@ -1403,20 +1419,6 @@
     height: auto;
   }
 
-/* Fade animation */
-  .af {
-    opacity: 0;
-    animation: animation-fade 1s ease forwards;
-  }
-  @keyframes animation-fade {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
 /* Twemoji and GitHub emoji */
   .twemoji, .gemoji {
     height: 1em;
@@ -1693,29 +1695,31 @@
       </h3>
       
         
-        <svg class="bar" xmlns="http://www.w3.org/2000/svg" width="460" height="8">
-          <mask id="languages-bar">
-            <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
-          </mask>
-          <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-          
-            <rect mask="url(#languages-bar)" x="0" y="0" width="213.46565618787278" height="8" fill="#012456"/>
-          
-            <rect mask="url(#languages-bar)" x="213.46565618787278" y="0" width="86.5038647541901" height="8" fill="#563d7c"/>
-          
-            <rect mask="url(#languages-bar)" x="299.96952094206284" y="0" width="45.353547083966916" height="8" fill="#6E4C13"/>
-          
-            <rect mask="url(#languages-bar)" x="345.3230680260298" y="0" width="35.547298445002575" height="8" fill="#701516"/>
-          
-            <rect mask="url(#languages-bar)" x="380.87036647103236" y="0" width="33.01755730126453" height="8" fill="#4F5D95"/>
-          
-            <rect mask="url(#languages-bar)" x="413.8879237722969" y="0" width="25.485758263785815" height="8" fill="#ededed"/>
-          
-            <rect mask="url(#languages-bar)" x="439.37368203608276" y="0" width="11.372031963809876" height="8" fill="#336790"/>
-          
-            <rect mask="url(#languages-bar)" x="450.74571399989264" y="0" width="9.254286000107395" height="8" fill="#3572A5"/>
-          
-        </svg>
+        
+          <svg class="bar" xmlns="http://www.w3.org/2000/svg" width="460" height="8">
+            <mask id="languages-bar">
+              <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
+            </mask>
+            <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
+            
+              <rect mask="url(#languages-bar)" x="0" y="0" width="213.46565618787278" height="8" fill="#012456"/>
+            
+              <rect mask="url(#languages-bar)" x="213.46565618787278" y="0" width="86.5038647541901" height="8" fill="#563d7c"/>
+            
+              <rect mask="url(#languages-bar)" x="299.96952094206284" y="0" width="45.353547083966916" height="8" fill="#6E4C13"/>
+            
+              <rect mask="url(#languages-bar)" x="345.3230680260298" y="0" width="35.547298445002575" height="8" fill="#701516"/>
+            
+              <rect mask="url(#languages-bar)" x="380.87036647103236" y="0" width="33.01755730126453" height="8" fill="#4F5D95"/>
+            
+              <rect mask="url(#languages-bar)" x="413.8879237722969" y="0" width="25.485758263785815" height="8" fill="#ededed"/>
+            
+              <rect mask="url(#languages-bar)" x="439.37368203608276" y="0" width="11.372031963809876" height="8" fill="#336790"/>
+            
+              <rect mask="url(#languages-bar)" x="450.74571399989264" y="0" width="9.254286000107395" height="8" fill="#3572A5"/>
+            
+          </svg>
+        
         
           <div class="row fill-width">
             
@@ -1824,6 +1828,7 @@
               </section>
             
           </div>
+        
         
         
       
@@ -3745,6 +3750,9 @@
 
       
         
+
+      
+        
       
         
       
@@ -3948,7 +3956,7 @@
           
             <span>These metrics do not include all private contributions</span>
           
-          <span>Last updated 25 Apr 2022, 18:19:29 (timezone America/Denver) with lowlighter/metrics@3.22.0</span>
+          <span>Last updated 26 Apr 2022, 06:06:19 (timezone America/Denver) with lowlighter/metrics@3.23.0</span>
         </footer>
       
 
