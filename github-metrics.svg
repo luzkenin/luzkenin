@@ -472,6 +472,9 @@
     margin: 8px 14px 4px;
     border-radius: 5px;
   }
+  .screenshot-content {
+    margin-left: 12px;
+  }
 
   svg.large .audits {
     display: inline-flex;
@@ -4107,7 +4110,7 @@
           
             <span>These metrics do not include all private contributions</span>
           
-          <span>Last updated 21 Dec 2022, 17:16:25 (timezone America/Denver) with lowlighter/metrics@3.30.0</span>
+          <span>Last updated 22 Dec 2022, 05:06:15 (timezone America/Denver) with lowlighter/metrics@3.31.0</span>
         </footer>
       
 
